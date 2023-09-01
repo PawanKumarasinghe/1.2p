@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Concepts Example</title>
+</head>
+<body>
+    <script>
+        // String methods (Question 1)
+
+        var text = "Hello, World!";
+        var length = text.length;
+        var uppercase = text.toUpperCase();
+        var lowercase = text.toLowerCase();
+        var indexOfWorld = text.indexOf("World");
+        var replaced = text.replace("Hello", "Bye");
+
+        // Number methods (Question 2)
+
+        var number = 42;
+        var toFixed = number.toFixed(2);
+        var exponential = number.toExponential(4);
+        var precision = number.toPrecision(4);
+        var convertedToString = number.toString();
+
+        // Array methods (Question 3)
+
+        var fruits = ["apple", "banana", "cherry"];
+        var joined = fruits.join(", ");
+        var reversed = fruits.reverse();
+        var sliced = fruits.slice(1, 3);
+        var indexOfCherry = fruits.indexOf("cherry");
+        
+        // Date methods (Question 4)
+
+        var currentDate = new Date();
+        var year = currentDate.getFullYear();
+        var month = currentDate.getMonth();
+        var day = currentDate.getDate();
+        var hours = currentDate.getHours();
+        var minutes = currentDate.getMinutes();
+
+        // Function methods (Question 5)
+        
+        function greet(name) {
+            return "Hello, " + name + "!";
+        }
+        function multiply(a, b) {
+            return a * b;
+        }
+
+        var result1 = greet("Alice");
+        var result2 = multiply(2, 3);
+
+        // Display results <Question 1>
+        document.write("<h1>Question - 1:</h1>");
+        document.write("<p>String Methods:</p>");
+        document.write("<p><b>Length:</b> " + length + "</p>");
+        document.write("<p><b>Uppercase:</b> " + uppercase + "</p>");
+        document.write("<p><b>Lowercase:</b> " + lowercase + "</p>");
+        document.write("<p><b>Index of 'World':</b> " + indexOfWorld + "</p>");
+        document.write("<p><b>Replaced Text:</b> " + replaced + "</p>");
+
+        // Display results <Question 2>
+
+        document.write("<h1>Question - 2:</h1>");
+        document.write("<p>Number Methods:</p>");
+        document.write("<p><b>Fixed:</b> " + toFixed + "</p>");
+        document.write("<p><b>Exponential:</b> " + exponential + "</p>");
+        document.write("<p><b>Precision:</b> " + precision + "</p>");
+        document.write("<p><b>Converted to String:</b> " + convertedToString + "</p>");
+
+        // Display results <Question 3>
+
+        document.write("<h1>Question - 3:</h1>");
+        document.write("<p>Array Methods:</p>");
+        document.write("<p><b>Joined:</b> " + joined + "</p>");
+        document.write("<p><b>Reversed:</b> " + reversed + "</p>");
+        document.write("<p><b>Sliced:</b> " + sliced + "</p>");
+        document.write("<p><b>Index of 'cherry':</b> " + indexOfCherry + "</p>");
+
+        // Display results <Question 4>
+
+        document.write("<h1>Question - 4:</h1>");
+        document.write("<p>Date Methods:</p>");
+        document.write("<p><b>Year:</b> " + year + "</p>");
+        document.write("<p><b>Month:</b> " + month + "</p>");
+        document.write("<p><b>Day:</b> " + day + "</p>");
+        document.write("<p><b>Hours:</b> " + hours + "</p>");
+        document.write("<p><b>Minutes:</b> " + minutes + "</p>");
+
+        // Display results <Question 5>
+
+        document.write("<h1>Question - 5:</h1>");
+        document.write("<p>Function Methods:</p>");
+        document.write("<p>" + result1 + "</p>");
+        document.write("<p> Answer is : " + result2 + "</p>");
+    </script>
+</body>
+</html>
